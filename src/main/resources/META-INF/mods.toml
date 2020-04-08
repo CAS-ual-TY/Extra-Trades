@@ -29,11 +29,5 @@ credits="Mojang, Minecraft Forge Team and me (CAS_ual_TY)." #optional
 authors="CAS_ual_TY" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Adding some useful trades for vanilla items.
-
-The following items are now buyable:
-Cooked Mutton, Cooked Beef, Banner Pattern Creeper, Banner Pattern Thing, Banner Pattern Skull, Rabbit Feet, Wheat, Potatoes, Carrots, Sugar Canes, Eggs, Pufferfish, Leather, Cobblestone, Strings.
-
-The following items are now sellable:
-Sugar Cane, Eggs, Cobblestone.
+This is a mini-mod adding some trades to the existing villagers. Basically, most of the things that were only either buyable or sellable, can now both be bought and sold. And additionally you can now buy some useful items which you could not buy before.
 '''
