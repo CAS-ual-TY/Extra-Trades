@@ -1,14 +1,14 @@
-modLoader="javafml" #mandatory
-loaderVersion="[34,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+modLoader="javafml"
+loaderVersion="[34,)"
 license="GNU General Public License v3.0"
-issueTrackerURL="https://github.com/CAS-ual-TY/Extra-Trades/issues" #optional
+issueTrackerURL="https://github.com/CAS-ual-TY/Extra-Trades/issues"
 
-[[mods]] #mandatory
-    modId="extratrades" #mandatory
-    version="${file.jarVersion}" #mandatory
-    displayName="Extra Trades" #mandatory
-    displayURL="https://github.com/CAS-ual-TY/Extra-Trades" #optional
-    logoFile="logo.png" #optional
-    credits="Mojang and the Minecraft Forge Team" #optional
-    authors="CAS_ual_TY" #optional
+[[mods]]
+    modId="extratrades"
+    version="${file.jarVersion}"
+    displayName="Extra Trades"
+    displayURL="https://github.com/CAS-ual-TY/Extra-Trades"
+    logoFile="logo.png"
+    credits="Mojang and the Minecraft Forge Team"
+    authors="CAS_ual_TY"
     description="This is a mini-mod adding some trades to the existing villagers. Basically, most of the things that were only either buyable or sellable, can now both be bought and sold. And additionally you can now buy some useful items which you could not buy before."
