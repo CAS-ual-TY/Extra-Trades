@@ -1,10 +1,10 @@
 package de.cas_ual_ty.extratrades;
 
-import net.minecraft.entity.merchant.villager.VillagerProfession;
-import net.minecraft.entity.merchant.villager.VillagerTrades.ITrade;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
-import net.minecraft.item.MerchantOffer;
+import net.minecraft.world.entity.npc.VillagerProfession;
+import net.minecraft.world.entity.npc.VillagerTrades.ItemListing;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.trading.MerchantOffer;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.village.VillagerTradesEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -65,12 +65,12 @@ public class ExtraTrades
         }
     }
     
-    public static ITrade buildTrade(ItemStack wanted1, ItemStack given, int tradesUntilDisabled, int xpToVillagr, float priceMultiplier)
+    public static ItemListing buildTrade(ItemStack wanted1, ItemStack given, int tradesUntilDisabled, int xpToVillagr, float priceMultiplier)
     {
         return ExtraTrades.buildTrade(wanted1, ItemStack.EMPTY, given, tradesUntilDisabled, xpToVillagr, priceMultiplier);
     }
     
-    public static ITrade buildTrade(ItemStack wanted1, ItemStack wanted2, ItemStack given, int tradesUntilDisabled, int xpToVillagr, float priceMultiplier)
+    public static ItemListing buildTrade(ItemStack wanted1, ItemStack wanted2, ItemStack given, int tradesUntilDisabled, int xpToVillagr, float priceMultiplier)
     {
         return (entity, random) -> new MerchantOffer(wanted1, wanted2, given, tradesUntilDisabled, xpToVillagr, priceMultiplier);
     }
