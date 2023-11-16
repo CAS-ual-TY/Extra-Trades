@@ -5,9 +5,9 @@ import net.minecraft.world.entity.npc.VillagerTrades.ItemListing;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.trading.MerchantOffer;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.village.VillagerTradesEvent;
-import net.minecraftforge.fml.common.Mod;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.village.VillagerTradesEvent;
 
 @Mod(ExtraTrades.MOD_ID)
 public class ExtraTrades
@@ -16,7 +16,7 @@ public class ExtraTrades
     
     public ExtraTrades()
     {
-        MinecraftForge.EVENT_BUS.addListener(this::villagerTrades);
+        NeoForge.EVENT_BUS.addListener(this::villagerTrades);
     }
     
     private void villagerTrades(VillagerTradesEvent event)
